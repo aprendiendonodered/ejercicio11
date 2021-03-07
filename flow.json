@@ -328,10 +328,12 @@
         "mode": "text",
         "delay": 300,
         "topic": "",
-        "x": 560,
+        "x": 160,
         "y": 380,
         "wires": [
-            []
+            [
+                "eaf3bf1b.56b46"
+            ]
         ]
     },
     {
@@ -349,12 +351,14 @@
         "outs": "all",
         "topic": "",
         "min": 0,
-        "max": 10,
+        "max": "8",
         "step": 1,
-        "x": 550,
+        "x": 150,
         "y": 460,
         "wires": [
-            []
+            [
+                "2799d04b.9f089"
+            ]
         ]
     },
     {
@@ -399,6 +403,32 @@
         "broker": "42de9fc6.58a54",
         "x": 510,
         "y": 240,
+        "wires": []
+    },
+    {
+        "id": "eaf3bf1b.56b46",
+        "type": "mqtt out",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "topic": "cursocefire/wemos/enrique/oled",
+        "qos": "",
+        "retain": "",
+        "broker": "42de9fc6.58a54",
+        "x": 520,
+        "y": 380,
+        "wires": []
+    },
+    {
+        "id": "2799d04b.9f089",
+        "type": "mqtt out",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "topic": "cursocefire/wemos/enrique/matrix",
+        "qos": "",
+        "retain": "",
+        "broker": "42de9fc6.58a54",
+        "x": 540,
+        "y": 460,
         "wires": []
     }
 ]
