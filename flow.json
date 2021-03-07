@@ -1,1 +1,404 @@
-[]
+[
+    {
+        "id": "7a264add.880ae4",
+        "type": "tab",
+        "label": "Flow 1",
+        "disabled": false,
+        "info": ""
+    },
+    {
+        "id": "468a7ac2.ce3b44",
+        "type": "ui_base",
+        "theme": {
+            "name": "theme-light",
+            "lightTheme": {
+                "default": "#0094CE",
+                "baseColor": "#0094CE",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": true,
+                "reset": false
+            },
+            "darkTheme": {
+                "default": "#097479",
+                "baseColor": "#097479",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif",
+                "edited": false
+            },
+            "customTheme": {
+                "name": "Untitled Theme 1",
+                "default": "#4B7930",
+                "baseColor": "#4B7930",
+                "baseFont": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+            },
+            "themeState": {
+                "base-color": {
+                    "default": "#0094CE",
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-titlebar-backgroundColor": {
+                    "value": "#0094CE",
+                    "edited": false
+                },
+                "page-backgroundColor": {
+                    "value": "#fafafa",
+                    "edited": false
+                },
+                "page-sidebar-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-textColor": {
+                    "value": "#1bbfff",
+                    "edited": false
+                },
+                "group-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "group-backgroundColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "widget-textColor": {
+                    "value": "#111111",
+                    "edited": false
+                },
+                "widget-backgroundColor": {
+                    "value": "#0094ce",
+                    "edited": false
+                },
+                "widget-borderColor": {
+                    "value": "#ffffff",
+                    "edited": false
+                },
+                "base-font": {
+                    "value": "-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen-Sans,Ubuntu,Cantarell,Helvetica Neue,sans-serif"
+                }
+            },
+            "angularTheme": {
+                "primary": "indigo",
+                "accents": "blue",
+                "warn": "red",
+                "background": "grey"
+            }
+        },
+        "site": {
+            "name": "Node-RED Dashboard",
+            "hideToolbar": "false",
+            "allowSwipe": "false",
+            "lockMenu": "false",
+            "allowTempTheme": "true",
+            "dateFormat": "DD/MM/YYYY",
+            "sizes": {
+                "sx": 48,
+                "sy": 48,
+                "gx": 6,
+                "gy": 6,
+                "cx": 6,
+                "cy": 6,
+                "px": 0,
+                "py": 0
+            }
+        }
+    },
+    {
+        "id": "f03935be.295e48",
+        "type": "ui_tab",
+        "name": "Wemos D1  mini",
+        "icon": "dashboard",
+        "disabled": false,
+        "hidden": false
+    },
+    {
+        "id": "d5efd53.311d128",
+        "type": "ui_group",
+        "name": "DS18B20",
+        "tab": "f03935be.295e48",
+        "order": 1,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "2fe5c74f.26d7f8",
+        "type": "ui_group",
+        "name": "Led",
+        "tab": "f03935be.295e48",
+        "order": 2,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "e760775.9a33e88",
+        "type": "ui_group",
+        "name": "Relé",
+        "tab": "f03935be.295e48",
+        "order": 3,
+        "disp": true,
+        "width": 3,
+        "collapse": false
+    },
+    {
+        "id": "ffa028df.e74868",
+        "type": "ui_group",
+        "name": "Pantalla Oled",
+        "tab": "f03935be.295e48",
+        "order": 4,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "9c71e624.4c3188",
+        "type": "ui_group",
+        "name": "Matriz Led",
+        "tab": "f03935be.295e48",
+        "order": 5,
+        "disp": true,
+        "width": "6",
+        "collapse": false
+    },
+    {
+        "id": "42de9fc6.58a54",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "enriquecrespo.com",
+        "port": "8883",
+        "tls": "",
+        "clientid": "",
+        "usetls": true,
+        "compatmode": false,
+        "keepalive": "60",
+        "cleansession": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "closeTopic": "",
+        "closeQos": "0",
+        "closePayload": "",
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": ""
+    },
+    {
+        "id": "96ad739f.46938",
+        "type": "ui_gauge",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "group": "d5efd53.311d128",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "gtype": "gage",
+        "title": "gauge",
+        "label": "units",
+        "format": "{{value}}",
+        "min": 0,
+        "max": "35",
+        "colors": [
+            "#00b500",
+            "#e6e600",
+            "#ca3838"
+        ],
+        "seg1": "25",
+        "seg2": "30",
+        "x": 550,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7c82cfe4.bd62a",
+        "type": "ui_chart",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "group": "d5efd53.311d128",
+        "order": 2,
+        "width": 0,
+        "height": 0,
+        "label": "chart",
+        "chartType": "line",
+        "legend": "false",
+        "xformat": "HH:mm:ss",
+        "interpolate": "linear",
+        "nodata": "",
+        "dot": false,
+        "ymin": "",
+        "ymax": "",
+        "removeOlder": 1,
+        "removeOlderPoints": "",
+        "removeOlderUnit": "3600",
+        "cutout": 0,
+        "useOneColor": false,
+        "useUTC": false,
+        "colors": [
+            "#1f77b4",
+            "#aec7e8",
+            "#ff7f0e",
+            "#2ca02c",
+            "#98df8a",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "useOldStyle": false,
+        "outputs": 1,
+        "x": 550,
+        "y": 160,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "737a8730.ec2598",
+        "type": "ui_switch",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "2fe5c74f.26d7f8",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 150,
+        "y": 240,
+        "wires": [
+            [
+                "356d7f2.b79868"
+            ]
+        ]
+    },
+    {
+        "id": "2352044c.f9f84c",
+        "type": "ui_switch",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "label": "switch",
+        "tooltip": "",
+        "group": "e760775.9a33e88",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "decouple": "false",
+        "topic": "",
+        "style": "",
+        "onvalue": "1",
+        "onvalueType": "num",
+        "onicon": "",
+        "oncolor": "",
+        "offvalue": "0",
+        "offvalueType": "num",
+        "officon": "",
+        "offcolor": "",
+        "x": 150,
+        "y": 300,
+        "wires": [
+            [
+                "c3ffce62.4083b"
+            ]
+        ]
+    },
+    {
+        "id": "3498d1d7.c9ba5e",
+        "type": "ui_text_input",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "label": "",
+        "tooltip": "",
+        "group": "ffa028df.e74868",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "mode": "text",
+        "delay": 300,
+        "topic": "",
+        "x": 560,
+        "y": 380,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f8f2ee42.84bd9",
+        "type": "ui_slider",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "label": "slider",
+        "tooltip": "",
+        "group": "9c71e624.4c3188",
+        "order": 1,
+        "width": 0,
+        "height": 0,
+        "passthru": true,
+        "outs": "all",
+        "topic": "",
+        "min": 0,
+        "max": 10,
+        "step": 1,
+        "x": 550,
+        "y": 460,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "f319371b.969518",
+        "type": "mqtt in",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "topic": "cursocefire/wemos/enrique/temperatura",
+        "qos": "2",
+        "datatype": "auto",
+        "broker": "42de9fc6.58a54",
+        "x": 180,
+        "y": 120,
+        "wires": [
+            [
+                "96ad739f.46938",
+                "7c82cfe4.bd62a"
+            ]
+        ]
+    },
+    {
+        "id": "c3ffce62.4083b",
+        "type": "mqtt out",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "topic": "cursocefire/wemos/enrique/rele",
+        "qos": "",
+        "retain": "",
+        "broker": "42de9fc6.58a54",
+        "x": 510,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "356d7f2.b79868",
+        "type": "mqtt out",
+        "z": "7a264add.880ae4",
+        "name": "",
+        "topic": "cursocefire/wemos/enrique/led",
+        "qos": "",
+        "retain": "",
+        "broker": "42de9fc6.58a54",
+        "x": 510,
+        "y": 240,
+        "wires": []
+    }
+]
